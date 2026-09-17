@@ -30,12 +30,12 @@ public class ProductsAddToCartTest extends BaseTest {
 
     // My Test attempt
     // add one then delete one and make sure the badge disappeared
-   @Test 
-    public void addingProductToCartThenRemovingShowsBadgeWithNoNumber(){
-        productsPage.addBackPackToCart();
-        productsPage.removeBackPackFromCart();
-        assertEquals(0, productsPage.getCartBadgeCount());
-    }
+//    @Test 
+//     public void addingProductToCartThenRemovingShowsBadgeWithNoNumber(){
+//         productsPage.addBackPackToCart();
+//         productsPage.removeBackPackFromCart();
+//         assertEquals(0, productsPage.getCartBadgeCount());
+//     }
     //Martyna's version
     @Test 
     public void addingAndRemovingProductShowsAndHidesBadge(){
@@ -56,27 +56,27 @@ public class ProductsAddToCartTest extends BaseTest {
 
     // My Test attempt
     //add and remove but not all
-        @Test 
-    public void addingMultipleProductsToCartThenRemovingOneShowsCartBadgeWithCorrectNumber(){
-        List<WebElement> allProductCards = productsPage.getAllProductCards();
-        productsPage.addToCart(allProductCards.get(0));
-        productsPage.addToCart(allProductCards.get(1));
-        productsPage.addToCart(allProductCards.get(2));
-        productsPage.removeFromCart(allProductCards.get(0));
-        assertEquals(2, productsPage.getCartBadgeCount());
-    }
+    //     @Test 
+    // public void addingMultipleProductsToCartThenRemovingOneShowsCartBadgeWithCorrectNumber(){
+    //     List<WebElement> allProductCards = productsPage.getAllProductCards();
+    //     productsPage.addToCart(allProductCards.get(0));
+    //     productsPage.addToCart(allProductCards.get(1));
+    //     productsPage.addToCart(allProductCards.get(2));
+    //     productsPage.removeFromCart(allProductCards.get(0));
+    //     assertEquals(2, productsPage.getCartBadgeCount());
+    // }
 
     // My Test attempt
     //add and remove all - make sure the badge is gone
-            @Test 
-    public void addingMultipleProductsToCartThenRemovingAllShowsCartBadgeWithNoNumber(){
-        List<WebElement> allProductCards = productsPage.getAllProductCards();
-        productsPage.addToCart(allProductCards.get(0));
-        productsPage.addToCart(allProductCards.get(1));
-        productsPage.addToCart(allProductCards.get(2));
-        productsPage.removeFromCart(allProductCards.get(0));
-        productsPage.removeFromCart(allProductCards.get(1));
-        productsPage.removeFromCart(allProductCards.get(2));
-        assertEquals(0, productsPage.getCartBadgeCount());
-    }
+    //      @Test 
+    // public void addingMultipleProductsToCartThenRemovingAllShowsCartBadgeWithNoNumber(){
+    //     List<WebElement> allProductCards = productsPage.getAllProductCards();
+    //     productsPage.addToCart(allProductCards.get(0));
+    //     productsPage.addToCart(allProductCards.get(1));
+    //     productsPage.addToCart(allProductCards.get(2));
+    //     productsPage.removeFromCart(allProductCards.get(0));
+    //     productsPage.removeFromCart(allProductCards.get(1));
+    //     productsPage.removeFromCart(allProductCards.get(2));
+    //     assertEquals(0, productsPage.getCartBadgeCount());
+    //}
 }
