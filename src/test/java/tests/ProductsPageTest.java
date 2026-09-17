@@ -1,13 +1,6 @@
 package tests;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
-import pages.LoginPage;
-import pages.ProductsPage;
 import shared.BaseTest;
 
 public class ProductsPageTest extends BaseTest{
