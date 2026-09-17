@@ -44,7 +44,7 @@ public class ProductsPage extends BasePage{
     public void addToCart(WebElement product) {
         WebElement addToCartBtn = product.findElement(addToCartButton);
         addToCartBtn.click();
-        //wait.until(driver -> product.findElement(addToCartButton).getText().equals("Remove"));
+        wait.until(driver -> product.findElement(addToCartButton).getText().equals("Remove"));
     }
 
     public void removeFromCart(WebElement product){

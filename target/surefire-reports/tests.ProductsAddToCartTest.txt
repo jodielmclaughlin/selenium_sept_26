@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: tests.ProductsAddToCartTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.57 s -- in tests.ProductsAddToCartTest
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.08 s <<< FAILURE! -- in tests.ProductsAddToCartTest
+tests.ProductsAddToCartTest.addingMultipleProductsToCartThenRemovingAllShowsCartBadgeWithNoNumber -- Time elapsed: 1.897 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at tests.ProductsAddToCartTest.addingMultipleProductsToCartThenRemovingAllShowsCartBadgeWithNoNumber(ProductsAddToCartTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
