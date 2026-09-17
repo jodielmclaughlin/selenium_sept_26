@@ -50,6 +50,7 @@ public class ProductsPage extends BasePage{
     public void removeFromCart(WebElement product){
         WebElement removeFromCartBtn = product.findElement(removeFromCartButton);
         removeFromCartBtn.click();
+        wait.until(driver -> product.findElement(removeFromCartButton).getText().equals("Add to cart"));
     }
 
     public void addBackPackToCart() {
